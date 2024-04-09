@@ -1,27 +1,43 @@
 <html>
+
+<head>
+  <meta property="og:image"
+        content="">
+  <title></title>
+
+</head>
 <body>
 
 
 <iframe style="border: 0px solid beige;margin:0 auto;" width="90%" height="90%"
         id="ifrm"
-        src="https://aigc.kmai.team/tiaozhuanlink/share/20240409/1777540798141829120-2.html"></iframe>
+        src=""></iframe>
 
 </body>
 <script>
   const id = document.location.href.split("?id=")[1]
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://ces.kmai.team/sqx_fast/app/sys/wxlk/wbLink/99998899', true);
+  xhr.open('GET', 'https://ces.kmai.team/sqx_fast/app/sys/wxlk/wbLink/' + id, true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        // title,logUrl
-        let data = JSON.parse(xhr.responseText)['data'];
-        document.title = data['title']
-        // 获取 <meta> 元素
-        var ogImageMeta = document.querySelector('meta[property="og:image"]');
 
-        // 设置 content 属性的值
-        ogImageMeta.setAttribute('content', data['logUrl']);
+        let data = JSON.parse(xhr.responseText)['data'];
+
+        // 设置链接
+        var iframe = document.getElementById('ifrm');
+        iframe.src = data['sourceLink']
+
+        // 设置标题
+        document.title = data['title']
+
+        // 设置图标
+        var iconLink = document.createElement('link');
+        iconLink.rel = 'icon';
+        iconLink.type = 'image/x-icon';
+        iconLink.href = data['logUrl'];
+        document.head.appendChild(iconLink);
+
 
 
       } else {
