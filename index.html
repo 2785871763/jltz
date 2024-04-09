@@ -38,6 +38,15 @@
         iconLink.href = data['logUrl'];
         document.head.appendChild(iconLink);
 
+        // 设置描述
+        // 创建 meta 元素
+        var descriptionMeta = document.createElement('meta');
+        descriptionMeta.setAttribute('name', 'description');
+        descriptionMeta.setAttribute('content', '这是您的描述文本。');
+
+        // 将 meta 元素添加到 head 中
+        document.head.appendChild(descriptionMeta);
+
 
 
       } else {
