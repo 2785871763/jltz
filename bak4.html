@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta charset="UTF-8">
+  <meta property="og:image"
+    content="">
+  <title></title>
+  <style>
+    .a-link {
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 40%;
+      width: 100%;
+      width: 160px;
+      height: 40px;
+      line-height: 40px;
+      background: #07c160;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .img {
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%);
+      top: 150px;
+      width: 100px;
+      height: 100px;
+    }
+
+    .img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .img2 {
+      display: none;
+      width: 288px;
+      height: 260px;
+      margin: 0 auto;
+      margin-top: 150px;
+    }
+
+    .img2 img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .img img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+    }
+
+    .card {
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+      width: 320px;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 1px 4px 10px rgba(0, 0, 0, .1);
+      display: none;
+    }
+
+    .top {
+      width: 80%;
+      height: 80px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      flex-shrink: 0;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+    }
+
+    .name {
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      -webkit-box-orient: vertical;
+      margin-top: 10px;
+    }
+
+    .description {
+      margin-left: 20px;
+      font-size: 14px;
+      color: #A4A4A4;
+      height: 44px;
+      border-radius: 44px;
+      line-height: 44px;
+    }
+
+    .code {
+      width: 210px;
+      height: 210px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .code img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .bottom {
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      margin: 20px auto;
+      color: #A4A4A4;
+      font-size: 14px;
+    }
+
+    .popup {
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      width: 290px;
+      height: 84px;
+      border-radius: 10px;
+      z-index: 9999;
+      animation: fadeInOut 2s ease;
+      font-size: 36px;
+      line-height: 84px;
+      text-align: center;
+    }
+
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+
+      25% {
+        opacity: 1;
+      }
+
+      75% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .warn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: fixed;
+      top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+ <input class="input" value="1777553866200584192" style="display: none;">
+      <div class="warn">
+      <div class="wain-icon" style="width: 18px;height: 18px;margin-right: 4px;">
+        <img
+          src="https://kmfuture-marketplace-hz.oss-accelerate.aliyuncs.com/videofm/2024/3/24/e2a6d801-b4e3-4400-948a-ee4d20ccb727.png"
+          style="width: 100%;height: 100%;">
+      </div>
+      <div class="wain-text" style="font-size: 14px;">
+        本链接已经过<span style="color: #07c160;">SSL安全加密</span>，请放心访问！
+      </div>
+    </div>
+    <div class="img">
+      <img
+        src="https://kmfuture-marketplace-hz.oss-accelerate.aliyuncs.com/videofm/2024/3/18/87da18f8-e07e-438b-bdbf-4dd3157b14f4.png"
+        mode="widthFix">
+    </div>
+    <div class="img2">
+      <img
+        src="https://kmfuture-marketplace-hz.oss-accelerate.aliyuncs.com/videofm/2024/3/18/ede22472-0e3c-47d3-b1ef-71b0d993e0d7.png"
+        mode="widthFix">
+    </div>
+    <a href="https://ces.kmai.team/sqx_fast/app/sys/wxlk/view/1777553866200584192/2/QN2BpT3K9Pe" class="a-link">
+      前往微信打开
+    </a>
+    <!-- <div style="position: fixed;bottom: 35%;width: 100%;text-align: center;" class="text">
+      <span style="font-size: 14px;color: #7f7f7f;">
+        无法打开时，可使用默认浏览器打开。
+      </span>
+      <span style="font-size: 14px;color: #6c7da2;" id="copyLink">
+        复制链接
+      </span>
+    </div> -->
+    <div class="card">
+      <div class="top">
+        <div class="avatar">
+          <img src="" id="avatarUrl" mode="aspectFill">
+        </div>
+        <div>
+          <div class="name" id="title"></div>
+          <div class="description" id="description"></div>
+        </div>
+      </div>
+
+      <div class="code">
+        <img src="" id="qrCodeUrl" mode="aspectFill">
+      </div>
+      <div class="bottom">扫描二维码，添加我的微信</div>
+    </div>
+
+  </div>
+
+  <script>
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      var app = {
+        data: {
+          id: '',
+          from: {},
+          flag: null
+        },
+        functionis_weixn: function () {
+          var self = this
+          var ua = navigator.userAgent.toLowerCase()
+          var isWeixin = ua.indexOf('micromessenger') !== -1
+          this.flag = isWeixin
+          document.querySelector('.img').style.display = this.flag ? 'none' : 'block'
+          document.querySelector('.card').style.display = this.flag ? 'block' : 'none'
+          document.querySelector('.a-link ').style.display = this.flag ? 'none' : 'block'
+          self.id = searchParams.get('id')
+          self.fn()
+        },
+         fn: function () {
+          var self = this
+          var xhr = new XMLHttpRequest()
+          xhr.open('POST', 'https://ces.kmai.team/sqx_fast/app/wxlk/getContentById', true)
+          xhr.setRequestHeader('Content-Type', 'application/json')
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              var res = JSON.parse(xhr.responseText)
+              if (res.code === 200) {
+                self.from = res.data
+                document.getElementById('avatarUrl').src = self.from.avatarUrl
+                document.getElementById('title').textContent = self.from.title
+                document.getElementById('description').textContent = self.from.description
+                document.getElementById('qrCodeUrl').src = self.from.qrCodeUrl
+
+                // 获取链接地址并判断是否包含特定字符
+                var linkurl = document.querySelector('a.a-link').href
+                if (linkurl.includes('-1')) {
+                  if (self.from.canCount <= 0) {
+                    showLinkExpiredMessage()
+                  } else {
+                    document.querySelector('.a-link').style.display = self.flag ? 'none' : 'block'
+                    document.querySelector('.warn').style.opacity = self.flag ? '0' : '1'
+                    document.querySelector('.card').style.display = self.flag ? 'block' : 'none'
+                  }
+                } else if (linkurl.includes('-2')) {
+                  if (self.from.canCountDy <= 0) {
+                    showLinkExpiredMessage()
+                  } else {
+                    document.querySelector('.a-link').style.display = self.flag ? 'none' : 'block'
+                    document.querySelector('.warn').style.opacity = self.flag ? '0' : '1'
+                    document.querySelector('.card').style.display = self.flag ? 'block' : 'none'
+                  }
+                }
+              }
+            }
+          }
+
+          let values = document.querySelector('.input').value
+          if (values > 1) {
+            var data = JSON.stringify({ id: values })
+            xhr.send(data)
+          } else {
+            var data = JSON.stringify({ id: self.id })
+            xhr.send(data)
+          }
+        },
+
+        onLoad: function (e) {
+          console.log(e, 'e')
+          this.functionis_weixn()
+          if (e && e.id) {
+            this.id = e.id
+            if (this.flag) {
+              this.fn()
+            }
+          }
+        }
+      }
+
+      // 显示链接失效信息
+      function showLinkExpiredMessage () {
+        console.log('链接失效')
+        document.querySelector('.a-link').style.display = 'none'
+        document.querySelector('.warn').style.display = 'none'
+        document.querySelector('.img').style.display = 'none'
+        document.querySelector('.card').style.display = 'none'
+        document.querySelector('.img2').style.display = 'block'
+        document.querySelector('.img2').style.width = '288px'
+        document.querySelector('.img2').style.height = '260px'
+      }
+
+      var searchParams = new URLSearchParams(window.location.search)
+      app.onLoad({ id: getUrlParameter('id') })
+
+      // document.getElementById('copyLink').addEventListener('click', function () {
+      //   // 检查是否已经获取了分享链接
+      //   if (!app.from || !app.from.shareLink) {
+      //     console.error('分享链接未获取')
+      //     return
+      //   }
+      //   // 复制分享链接
+      //   var url = document.querySelector('a.a-link').href
+      //   navigator.clipboard.writeText(url).then(() => {
+      //     showPopup('链接已复制')
+      //   }).catch(err => {
+      //     console.error('Copy Failed', err)
+      //   })
+      // })
+
+      // 显示弹窗的函数
+      function showPopup (message) {
+        // 创建一个弹窗元素
+        var popup = document.createElement('div')
+        popup.classList.add('popup')
+        popup.textContent = message
+
+        // 将弹窗添加到页面中
+        document.body.appendChild(popup)
+
+        // 2秒后移除弹窗
+        setTimeout(function () {
+          popup.remove()
+        }, 2000)
+      }
+
+      document.querySelector('.btntext').addEventListener('click', function () {
+        console.log('跳转')
+        app.data.flag = true
+        if (app.from && app.from.xcxLink) {
+          window.location.href = app.from.xcxLink
+        } else {
+          console.error('未找到微信链接')
+        }
+      })
+
+      function getUrlParameter (name) {
+        let input = document.querySelector('.input')
+        console.log(input.value, 'input')
+        var searchParams = new URLSearchParams(window.location.search)
+        if (input.value == 1) {
+          var id = searchParams.get('id')
+          console.log(id, '1的id')
+          app.onLoad({ id: id })
+          app.data.id = id
+        } else {
+          var id = input.value
+          console.log(id, '不是1的id')
+          if (id) {
+            app.onLoad({ id: id })
+            app.data.id = id
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
