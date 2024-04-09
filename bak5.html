@@ -14,7 +14,11 @@
     xhr.onreadystatechange = function() {
       if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {
-          console.log(JSON.parse(xhr.responseText)['data']);
+          // title,logUrl
+          let data = JSON.parse(xhr.responseText)['data'];
+          document.title = data['title']
+
+
         } else {
           console.error('There was a problem with the request:', xhr.statusText);
         }
