@@ -17,6 +17,17 @@
 <script>
   const id = document.location.href.split("?id=")[1].split("&")[0]
 
+  // 设置标题
+  document.title = data['title']
+
+  // 设置图标
+  var iconLink = document.createElement('link');
+  iconLink.rel = 'icon';
+  iconLink.type = 'image/x-icon';
+  iconLink.href = 'https://kmfuture-marketplace-hz.oss-accelerate.aliyuncs.com/videofm/2024/4/9/cf96cd44-d055-487b-ac98-7862e25a4101.png';
+  document.head.appendChild(iconLink);
+
+
 
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://ces.kmai.team/sqx_fast/app/sys/dyqrcode/checkState/' + id, true);
