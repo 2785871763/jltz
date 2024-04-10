@@ -57,11 +57,21 @@
           } else {
             // 获取要显示的元素
             var divElement = document.querySelector('.btn')
-            // 显示元素
             divElement.style.display = 'none'
+
             var divElement = document.querySelector('.img2')
-            // 显示元素
+            divElement.style.width = '576px'
+            divElement.style.height = '560px'
             divElement.style.display = 'block'
+
+            var divElement = document.querySelector('.logo')
+            divElement.style.display = 'none'
+
+            var divElement = document.querySelector('.text')
+            divElement.style.display = 'none'
+
+            var divElement = document.querySelector('.text')
+            divElement.style.display = 'none'
           }
         } else {
           console.error('There was a problem with the request:', xhr.statusText)
